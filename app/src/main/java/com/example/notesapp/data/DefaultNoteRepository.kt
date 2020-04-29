@@ -9,7 +9,6 @@ class DefaultNoteRepository @Inject constructor(private val localSource: NoteDat
 
     override fun getNotes() = localSource.getNotes()
 
-
     override suspend fun updateNote(note: Note) {
         localSource.updateNote(note = note)
     }
